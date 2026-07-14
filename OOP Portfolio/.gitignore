@@ -1,0 +1,10 @@
+# Ignoriere Python-Cache-Ordner
+__pycache__/
+*.pyc
+
+# Ignoriere deine lokale SQLite-Datenbank (falls du eine nutzt)
+*.db
+*.sqlite
+
+# Ignoriere VS Code Einstellungen
+.vscode/
