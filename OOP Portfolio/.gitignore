@@ -8,3 +8,4 @@ __pycache__/
 
 # Ignoriere VS Code Einstellungen
 .vscode/
+test.py.py
