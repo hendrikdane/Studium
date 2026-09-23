@@ -1,0 +1,13 @@
+# multiple tasks must be defined in the application. habit has a task specification and periodicity
+# task can be completed "checked off" by a user at any point in time
+# each task needs to be checked off at least once during the period the user defined for the respective habit.
+# if a user missed to complete a habit during the specified period, the user is said to "BREAK THE HABIT"
+# establishing of streaks if a user completes the task of a habit x consecutive periods in a row
+# the habits the user enter in the app are not only stored but can also be analysed.
+# Users might want answers to questions like "whats my longest habit streak? whats the list of my current daily habits? with which habit did i struggle the most the last month
+
+
+#für den code: Docstrings einpflegen
+# ein habit soll als class durch OOP implementiert werden
+# User muss in der Lage sein 2 Habit periods zu erstellen, weekly und daily.
+# 5 vordefinierte habits (mind. 1 weekly und 1 daily habit) 

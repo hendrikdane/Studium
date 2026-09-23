@@ -1,17 +1,19 @@
-""""""
-Your solution has an analytics module that allows users to analyse their habits. The functionality of this
-analytics module must be implemented using the functional programming paradigm. You are free to consider implementing other functionality as well, but these are the minimal requirements. Provide functionality to
-- return a list of all currently tracked habits,
-- return a list of all habits with the same periodicity,
-- return the longest run streak of all defined habits,
-- and return the longest run streak for a given habit.
-""""""
-
 def get_all_habits(habits):
+    """
+    This function returns a list of all currently tracked habits.
+    """
     return habits
 def get_habits_by_periodicity(habits, periodicity):
+    """
+    This function filters the habits by their periodicity (daily or weekly)
+    and only returns the desired ones.
+    """
     return list(filter(lambda h: h.periodicity==periodicity,habits))
 def get_longest_streak_habit(habit):
+    """
+    This function calculates the longest uninterrupted streak 
+    for a single habit.
+    """
     dates=sorted([entry["date"] for entry in habit.completions])
     streak=1
     longest=1
@@ -25,3 +27,9 @@ def get_longest_streak_habit(habit):
             streak=1
         longest=max(longest,streak)     
     return longest       
+def get_longest_streak_all(habits):
+    """
+    This function finds the longest streak of all habits
+    and returns it.
+    """
+    return max(habits, key=lambda h: get_longest_streak_habit(h))
