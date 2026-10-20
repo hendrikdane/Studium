@@ -1,6 +1,12 @@
 from datetime import datetime, timedelta
 from habit import Habit
 def create_fixtures():
+    """"
+    Creates and returns 5 predefined habits 
+    with 4 weeks of example tracking data
+    for testing purposes. Includes 3 daily 
+    and 2 weekly habits.
+    """
     batting = Habit("batting practice", "daily")
     stretching_warm_up=Habit("stretching & warm-up","daily")
     watch_game_footage=Habit("watch game footage","daily")
