@@ -2,9 +2,7 @@ import unittest
 from habit import Habit
 from analyse import *
 from fixtures import create_fixtures
-class SimpleTest(unittest.TestCase):
-    def test_simple(self):
-        self.assertEqual(1, 1)
+
 class TestHabit(unittest.TestCase):
     def setUp(self):
         """Creates a fresh habit before each test."""
