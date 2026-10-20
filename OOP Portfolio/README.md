@@ -3,6 +3,7 @@ Base-Track is a simple habit tracking app built with Python. It was created as p
 
 Requirements
 Python 3.7 or higher
+
 No additional libraries are required. All modules used are part of Python's standard library.
 
 Installation
