@@ -5,6 +5,10 @@ from database import save_habits, load_habits
 from fixtures import create_fixtures
 
 def main():
+    """
+    Runs the Base-Track CLI application.
+    Loads exsting habits, displays the main menu and handles user input.
+    """
     tracker = HabitTracker()
     habits = load_habits()
     
@@ -69,7 +73,7 @@ def main():
                     print(h.name)
             elif sub_choice == "2":
                 period_choice = input('Enter "weekly" or "daily": ')
-                filtered = filter_by_periodicity(tracker.get_habits(), period_choice)
+                filtered = get_habits_by_periodicity(tracker.get_habits(), period_choice)
                 for h in filtered:
                     print(h.name)
             elif sub_choice == "3":
