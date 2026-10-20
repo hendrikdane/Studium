@@ -11,7 +11,8 @@ Download or clone this repository:
 git clone https://github.com/hendrikdane/Studium.git
 Navigate to the project folder:
 cd "OOP Portfolio"
-How to start the app
+How to start the app:
+
 Run the following command in your terminal:
 
 python main.py
