@@ -1,6 +1,9 @@
 from habit import Habit
 class HabitTracker:
     def __init__(self):
+        """
+        Initialises the HabitTracker with an empty list of habits.
+        """
         self.habits=[]
     def get_habits(self):
         """
