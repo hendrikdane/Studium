@@ -7,7 +7,7 @@ from fixtures import create_fixtures
 def main():
     """
     Runs the Base-Track CLI application.
-    Loads exsting habits, displays the main menu and handles user input.
+    Loads existing habits, displays the main menu and handles user input.
     """
     tracker = HabitTracker()
     habits = load_habits()
@@ -38,6 +38,7 @@ def main():
             tracker.add_habit(new_habit)
             print(f"{name} has been added!")
         elif choice == "2":
+            habits = tracker.get_habits()
             for idx, h in enumerate(habits):
                 print(f"{idx + 1}. {h.name}")
             chosen_habit = int(input("Choose a number: ")) - 1
@@ -47,6 +48,7 @@ def main():
             habit.complete(note=note, with_teammate=teammate)
             print(f"{habit.name} completed!")
         elif choice == "3":
+            habits = tracker.get_habits()
             for idx, h in enumerate(habits):
                 print(f"{idx + 1}. {h.name}")
             excuse_for = int(input("Choose for which activity you want to log an excuse: ")) - 1
@@ -55,6 +57,7 @@ def main():
             habit.add_excuse(excuse=excuse)
             print(f"Excuse logged for {habit.name}")
         elif choice == "4":
+            habits = tracker.get_habits()
             for idx, h in enumerate(habits):
                 print(f"{idx + 1}. {h.name}")
             delete = int(input("Choose which activity you want to delete: ")) - 1
