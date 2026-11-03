@@ -35,7 +35,7 @@ def dict_to_habit(data):
     return habit
 def load_habits():
     """
-    This function reads the JSON-file und returns a list of habit objects.
+    This function reads the JSON-file and returns a list of habit objects.
     """
     try:
         with open(FILE,"r") as f:
